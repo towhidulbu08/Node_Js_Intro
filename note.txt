@@ -1,0 +1,29 @@
+#05 - Node.js Server & Core Modules 
+
+=>Core Modules:
+1.path
+2.os
+3.fs
+4.events
+5.server(it's a event emitter)
+
+
+Note: The default way of Node.js programming is asynchronous and non-blocking. This means that Node.js is designed to handle multiple operations at once without waiting for any single operation to complete before moving on to the next. Here are some key characteristics of the default behavior in Node.js:
+
+Key Characteristics:
+
+i.Event-Driven Architecture:
+
+Node.js uses an event-driven model, meaning it reacts to events or messages. When a function is called, it can register a callback that gets executed when the operation is complete.
+
+ii.Non-Blocking I/O:
+
+Input/output operations (like reading files, accessing databases, or making network requests) are non-blocking. Instead of stopping execution while waiting for these operations to complete, Node.js continues to execute subsequent code. Once the I/O operation is done, a callback function is invoked to handle the result.
+
+iii.Single Threaded:
+
+Node.js runs in a single-threaded environment, which means there is a single thread for executing JavaScript code. However, Node.js can handle multiple connections concurrently using its asynchronous architecture.
+
+iv.Callbacks and Promises:
+
+The asynchronous nature is often handled using callbacks, but promises and async/await are also common patterns for managing asynchronous operations more elegantly.
